@@ -1,0 +1,17 @@
+STEP 1: Navigate to the project folder
+cd "C:\Users\Dishant\OneDrive\Desktop\mindmate-ml"
+
+STEP 2: Run the script (choose one):
+
+Option A (easiest):
+& ".\venv\Scripts\python.exe" main.py
+
+Option B:
+venv\Scripts\python.exe main.py
+
+Option C (if you want to activate first):
+Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process
+.\venv\Scripts\Activate.ps1
+python main.py
+
+
