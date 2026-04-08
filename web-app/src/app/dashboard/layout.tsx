@@ -26,30 +26,30 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
           <span className="text-lg md:text-xl font-bold text-white tracking-tight hidden sm:inline">MindMate</span>
         </Link>
         
-        <nav className="flex items-center justify-center gap-4 md:gap-8 text-sm font-medium shrink-0">
+        <nav className="flex items-center justify-center gap-3 md:gap-8 text-sm font-medium shrink-0">
           <Link 
             href="/dashboard" 
-            className={`flex items-center gap-2 transition-colors ${pathname === '/dashboard' ? 'text-blue-400' : 'text-slate-400 hover:text-white'}`}
+            className={`flex flex-col md:flex-row items-center gap-1 md:gap-2 transition-colors ${pathname === '/dashboard' ? 'text-blue-400' : 'text-slate-400 hover:text-white'}`}
           >
-            <LayoutDashboard size={18} /> <span className="hidden md:inline">Dashboard</span>
+            <LayoutDashboard size={20} className="md:w-[18px] md:h-[18px]" /> <span className="text-[10px] md:text-sm whitespace-nowrap">Dashboard</span>
           </Link>
           <Link 
             href="/checkup" 
-            className={`flex items-center gap-2 transition-colors ${pathname === '/checkup' ? 'text-blue-400' : 'text-slate-400 hover:text-white'}`}
+            className={`flex flex-col md:flex-row items-center gap-1 md:gap-2 transition-colors ${pathname === '/checkup' ? 'text-blue-400' : 'text-slate-400 hover:text-white'}`}
           >
-            <Activity size={18} /> <span className="hidden md:inline">Daily Checkup</span>
+            <Activity size={20} className="md:w-[18px] md:h-[18px]" /> <span className="text-[10px] md:text-sm whitespace-nowrap">Checkup</span>
           </Link>
           <Link 
             href="/dashboard/progress" 
-            className={`flex items-center gap-2 transition-colors ${pathname === '/dashboard/progress' ? 'text-blue-400' : 'text-slate-400 hover:text-white'}`}
+            className={`flex flex-col md:flex-row items-center gap-1 md:gap-2 transition-colors ${pathname === '/dashboard/progress' ? 'text-blue-400' : 'text-slate-400 hover:text-white'}`}
           >
-            <TrendingUp size={18} /> <span className="hidden md:inline">My Progress</span>
+            <TrendingUp size={20} className="md:w-[18px] md:h-[18px]" /> <span className="text-[10px] md:text-sm whitespace-nowrap">Progress</span>
           </Link>
           <Link 
             href="/dashboard/profile" 
-            className={`flex items-center gap-2 transition-colors ${pathname === '/dashboard/profile' ? 'text-blue-400' : 'text-slate-400 hover:text-white'}`}
+            className={`flex flex-col md:flex-row items-center gap-1 md:gap-2 transition-colors ${pathname === '/dashboard/profile' ? 'text-blue-400' : 'text-slate-400 hover:text-white'}`}
           >
-            <User size={18} /> <span className="hidden md:inline">Profile</span>
+            <User size={20} className="md:w-[18px] md:h-[18px]" /> <span className="text-[10px] md:text-sm whitespace-nowrap">Profile</span>
           </Link>
         </nav>
 
