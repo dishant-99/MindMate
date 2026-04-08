@@ -182,7 +182,7 @@ function CoreScene() {
 
 export default function LandingPage() {
   return (
-    <div className="relative w-full h-[100dvh] bg-[#020617] overflow-hidden selection:bg-blue-500/30">
+    <div className="relative w-full min-h-[100dvh] lg:h-[100dvh] bg-[#020617] overflow-x-hidden lg:overflow-hidden selection:bg-blue-500/30">
       
       {/* Floating Gradient Orbs for depth */}
       <div className="absolute top-1/4 -left-1/4 w-[40vw] h-[40vw] bg-blue-600/10 rounded-full blur-[120px] pointer-events-none mix-blend-screen" />

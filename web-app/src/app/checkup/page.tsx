@@ -108,7 +108,7 @@ export default function CheckupPage() {
   };
 
   return (
-    <div className="min-h-screen bg-[#020817] flex flex-col items-center justify-center p-6 relative">
+    <div className="min-h-screen w-full overflow-x-hidden bg-[#020817] flex flex-col items-center justify-center p-6 relative">
       <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-500/10 blur-[120px] rounded-full pointer-events-none" />
       <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-violet-500/10 blur-[120px] rounded-full pointer-events-none" />
 
